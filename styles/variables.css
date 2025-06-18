@@ -2,3 +2,38 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --bg-color: #000028; /*цвет страницы*/
+  --bg-image: url(../images/cover-image-dark.png); /*фон страницы*/
+  --rectangle-color: #FF0070; /*цвет декоративных уголков*/
+  --element-text-color: #FF0070; /*декоративный элемент*/
+  --button-text-color: #FF0070; /*цвет текста кнопок*/
+  --header-button-bg-color: transparent; /*фон кнопок*/
+  --title-color: #DB00FF; /*цвет h1 загаловка и загаловка footer*/
+  --bg-text: #FF0070; /*фон у загаловков*/
+  --header-text-color: #000028; /*цвет текста у параграфа в header*/
+  --accent-color: #FF0070; /*цвет загаловка второго уровня*/
+  --color-h3: #000028; /*цвет загаловка третьего уровня*/
+  --color-text: #F1B2CE; /*цвет текста параграфов*/
+  --shadow-color: #FF0070; /*цвет тени*/
+
+  --button-border-def: #FF0070; /*цвет обводки кнопки*/
+  --button-border-hover: #FF007066; /*цвет обводки кнопки при наведении*/
+  --button-border-active: #FF0070; /*цвет обводки в активном состоянии*/
+  --button-border-visible: #FF0070; /* обводка через клавиатуру*/
+
+  /* Для мобильных */
+--h1-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+
+/* Для планшета и десктопа */
+--h1-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+--font-family: 'IBM Plex Mono', sans-serif;
+--font-weight: 400;
+--font-size: 18px;
+--padding: 10px;
+
+
+
+
+}

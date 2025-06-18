@@ -9,8 +9,47 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: #FFF1F7; /*цвет страницы*/
+  --bg-image: url(../images/cover-image-light.png); /*фон страницы*/
+  --rectangle-color: #353430; /*цвет декоративных уголков*/
+  --button-text-color: #353430; /*цвет текста кнопок*/
+  --header-button-bg-color: transparent; /*фон кнопок*/
+  --title-color: #FFC2E6; /*цвет h1 загаловка и загаловка footer*/
+  --bg-text: #FF8DCB; /*фон у загаловков*/
+  --header-text-color: #353430; /*цвет текста у параграфа в header*/
+  --accent-color: #353430; /*цвет загаловка второго уровня*/
+  --color-h3: #353430; /*цвет загаловка третьего уровня*/
+  --color-text: #353430; /*цвет текста параграфов*/
+  --shadow-color: #FF8DCB; /*цвет тени*/
+
+  --button-border-def: #353430; /*цвет обводки кнопки*/
+  --button-border-hover: #32312D66; /*цвет обводки кнопки при наведении*/
+  --button-border-active: #353430; /*цвет обводки в активном состоянии*/
+  --button-border-visible: #353430; /* обводка через клавиатуру*/
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .rec__icon {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --bg-color: #FFF1F7; /*цвет страницы*/
+  --bg-image: url(../images/cover-image-light.png); /*фон страницы*/
+  --rectangle-color: #353430; /*цвет декоративных уголков*/
+  --button-text-color: #353430; /*цвет текста кнопок*/
+  --header-button-bg-color: transparent; /*фон кнопок*/
+  --title-color: #FFC2E6; /*цвет h1 загаловка и загаловка footer*/
+  --bg-text: #FF8DCB; /*фон у загаловков*/
+  --header-text-color: #353430; /*цвет текста у параграфа в header*/
+  --accent-color: #353430; /*цвет загаловка второго уровня*/
+  --color-h3: #353430; /*цвет загаловка третьего уровня*/
+  --color-text: #353430; /*цвет текста параграфов*/
+  --shadow-color: #FF8DCB; /*цвет тени*/
+
+  --button-border-def: #353430; /*цвет обводки кнопки*/
+  --button-border-hover: #32312D66; /*цвет обводки кнопки при наведении*/
+  --button-border-active: #353430; /*цвет обводки в активном состоянии*/
+  --button-border-visible: #353430; /* обводка через клавиатуру*/
+  }
 }
