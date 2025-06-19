@@ -2,8 +2,8 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background-image: var(--bg-image);
-  background-color: var(--bg-color);
+  background-image: var(--bg-image, url(../images/cover-image-dark.png));
+  background-color: var(--bg-color, #000028);
   min-height: 100vh;
   background-clip: border-box;
   display: grid;
@@ -12,7 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
 }
 
 .header {
@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   block-size: 100vh;
+  min-block-size: 668px;
   padding: var(--padding, 10px);
 }
 
@@ -64,7 +65,7 @@
   text-transform: uppercase;
   padding-top: 10px;
   color: var(--element-text-color, #ff0070);
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
   font-weight: var(--font-weight, 400);
   font-size: var(--font-size, 18px);
   line-height: 25px;
@@ -100,7 +101,7 @@
 }
 
 .header__theme-menu-item {
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
   font-weight: var(--font-weight, 400);
   font-size: var(--font-size, 18px);
   line-height: 18px;
@@ -149,10 +150,10 @@
 
 .title {
   font-size: var(
-    --h1-size-mobile,
+    --font-size-mobile,
     clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
   );
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
   line-height: 83%;
   letter-spacing: 0;
   color: var(--title-color, #db00ff);
@@ -168,7 +169,7 @@
 }
 
 .title__description {
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
   font-weight: 700;
   font-size: var(--font-size, 18px);
   line-height: 23.4px;
@@ -180,7 +181,6 @@
 .main {
   display: grid;
   gap: 20px;
-  background-color: var(--bg-color, #000028);
   padding: var(--padding, 10px);
   min-height: 100vh;
 }
@@ -191,7 +191,7 @@
 }
 
 .section-title {
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
   font-weight: 700;
   font-size: var(--font-size, 18px);
   line-height: 23.4px;
@@ -206,7 +206,7 @@
 }
 
 .advice-title {
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
   font-weight: 700;
   font-size: var(--font-size, 18px);
   line-height: 23.4px;
@@ -214,7 +214,7 @@
 }
 
 .text {
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
   font-weight: var(--font-weight, 400);
   font-size: var(--font-size, 18px);
   line-height: 23.4px;
@@ -246,12 +246,12 @@
 }
 
 .suggested-title {
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
   font-weight: var(--font-weight, 400);
   font-size: var(--font-size, 18px);
   line-height: 23.4px;
   letter-spacing: 0;
-  color: var(--color-h3, #000028);
+  color: var(--advice-color, #000028);
 }
 
 .section__gallery {
@@ -275,8 +275,10 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding, 10px);
-  height: 100vh;
+  /*height: 100vh;*/
   /*min-height: 668px;*/
+  block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
   margin-top: 30px;
 }
@@ -316,7 +318,7 @@
 
   .title {
     font-size: var(
-      --h1-size-desktop,
+      --font-size-desktop,
       clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
     );
   }
@@ -440,7 +442,7 @@
 
   .title {
     font-size: var(
-      --h1-size-desktop,
+      --font-size-desktop,
       clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
     );
   }
