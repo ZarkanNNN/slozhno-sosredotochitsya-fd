@@ -52,4 +52,8 @@
   --button-border-active: #353430; /*цвет обводки в активном состоянии*/
   --button-border-visible: #353430; /* обводка через клавиатуру*/
   }
+
+  .rec__icon {
+    display: none;
+  }
 }

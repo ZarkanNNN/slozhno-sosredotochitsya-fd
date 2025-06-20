@@ -160,7 +160,7 @@
 }
 
 .text-shadow {
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+  text-shadow: 4px 4px 0 var(--shadow-color, #ff0070);
 }
 
 .title-decor {

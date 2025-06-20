@@ -28,3 +28,7 @@
   --button-border-active: #FF0070; /*цвет обводки в активном состоянии*/
   --button-border-visible: #FF0070; /* обводка через клавиатуру*/
 }
+
+.theme-light .rec__icon {
+  display: block;
+}
