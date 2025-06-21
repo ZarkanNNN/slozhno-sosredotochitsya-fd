@@ -29,6 +29,6 @@
   --button-border-visible: #FF0070; /* обводка через клавиатуру*/
 }
 
-.theme-light .rec__icon {
-  display: block;
+.theme-dark .rec__icon {
+  display: flex;
 }
